@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,20 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> TAMATO A FOOD DALUVARI</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  
-
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -228,137 +216,6 @@ transition: 0.5s ease;
 opacity: 1;
 pointer-events: all;
 }
-
-
-
-/**
-* MODAL 
-*/
-
-.modal {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100vh;
-background: hsla(0, 0%, 0%, 0.5);
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
-z-index: 10;
-animation: popup 1s ease-in-out 5s forwards;
-}
-
-@keyframes popup {
-
-0% {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-100% {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-}
-
-.modal.closed { display: none; }
-
-.modal-close-overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 1;
-}
-
-.newsletter-img { display: none; }
-
-.modal-content {
-position: relative;
-max-width: 350px;
-margin: 20px;
-background: var(--white);
-border-radius: var(--border-radius-md);
-overflow: hidden;
-z-index: 2;
-animation: scaleUp 0.5s ease-in-out 5s forwards;
-}
-
-@keyframes scaleUp {
-
-0% { transform: scale(0.9); }
-100% { transform: scale(1); }
-
-}
-
-.modal-close-btn {
-position: absolute;
-top: 15px;
-right: 15px;
-background: var(--salmon-pink);
-color: var(--white);
-font-size: 16px;
-padding: 5px;
-border-radius: var(--border-radius-sm);
-}
-
-.modal-close-btn:hover { opacity: 0.9; }
-
-.modal-close-btn ion-icon { --ionicon-stroke-width: 70px; }
-
-.newsletter {
-padding: 50px 30px;
-text-align: center;
-}
-
-.newsletter-header { margin-bottom: 20px; }
-
-.newsletter-title {
-color: var(--onyx);
-font-size: var(--fs-2);
-font-weight: var(--weight-600);
-margin-bottom: 10px;
-}
-
-.newsletter-desc {
-color: var(--sonic-silver);
-font-size: var(--fs-7);
-line-height: 1.6;
-}
-
-.email-field {
-font-size: var(--fs-7);
-padding: 8px 16px;
-border-radius: var(--border-radius-sm);
-border: 1px solid var(--cultured);
-margin-bottom: 16px;
-}
-
-.btn-newsletter {
-background: var(--eerie-black);
-color: var(--white);
-font-size: var(--fs-7);
-font-weight: var(--weight-600);
-text-transform: uppercase;
-padding: 10px 15px;
-border-radius: var(--border-radius-sm);
-margin: auto;
-transition: var(--transition-timing);
-}
-
-.btn-newsletter:hover { background: var(--salmon-pink); }
-
-
-
-
 
 /**
 * NOTIFICATION TOAST 
@@ -2029,25 +1886,6 @@ html { font-size: 17px; }
   margin: auto;
 }
 
-
-
-/**
- * #MODAL 
- */
-
-.modal-content {
-  display: flex;
-  align-items: center;
-  max-width: 750px;
-  width: fit-content;
-}
-
-.newsletter-img { display: block; }
-
-.newsletter { text-align: left; }
-
-
-
 /**
  * #HEADER 
  */
@@ -2666,58 +2504,6 @@ html { font-size: 18px; }
 
   <div class="overlay" data-overlay></div>
 
-  <!--
-    - MODAL
-  -->
-
-  <div class="modal" data-modal>
-
-    <div class="modal-close-overlay" data-modal-overlay></div>
-
-    <div class="modal-content">
-
-      <button class="modal-close-btn" data-modal-close>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="newsletter-img">
-        <img src="/assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-      </div>
-
-      <div class="newsletter">
-
-        <form action="#">
-
-          <div class="newsletter-header">
-
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-            <p class="newsletter-desc">
-              Subscribe the <b>Tamato</b> .A FREE DALIVARY IN THE CITY WITH 50% DISCOUNT
-            </p>
-
-          </div>
-
-          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-          <button type="submit" class="btn-newsletter">Subscribe</button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-  <!--
-    - NOTIFICATION TOAST
-  -->
-
   <div class="notification-toast" data-toast>
 
     <button class="toast-close-btn" data-toast-close>
@@ -2748,10 +2534,6 @@ html { font-size: 18px; }
 
 
 
-
-  <!--
-    - HEADER
-  -->
 
   <header>
 
@@ -3397,15 +3179,7 @@ html { font-size: 18px; }
 
 
 
-  <!--
-    - MAIN
-  -->
-
   <main>
-
-    <!--
-      - BANNER
-    -->
 
     <div class="banner">
 
@@ -3482,10 +3256,6 @@ html { font-size: 18px; }
 
 
 
-
-    <!--
-      - CATEGORY
-    -->
 
     <div class="category">
 
@@ -3663,18 +3433,10 @@ html { font-size: 18px; }
 
 
 
-    <!--
-      - PRODUCT
-    -->
-
     <div class="product-container">
 
       <div class="container">
 
-
-        <!--
-          - SIDEBAR
-        -->
 
         <div class="sidebar  has-scrollbar" data-mobile-menu>
 
@@ -4172,10 +3934,6 @@ html { font-size: 18px; }
 
 
         <div class="product-box">
-
-          <!--
-            - PRODUCT MINIMAL
-          -->
 
           <div class="product-minimal">
 
@@ -4808,10 +4566,6 @@ html { font-size: 18px; }
 
 
 
-          <!--
-            - PRODUCT FEATURED
-          -->
-
           <div class="product-featured">
 
             <h2 class="title"> SPECIAL OF THE DAY </h2>
@@ -4990,10 +4744,6 @@ html { font-size: 18px; }
           </div>
 
 
-
-          <!--
-            - PRODUCT GRID
-          -->
 
           <div class="product-main">
 
@@ -5627,19 +5377,11 @@ html { font-size: 18px; }
 
 
 
-    <!--
-      - TESTIMONIALS, CTA & SERVICE
-    -->
-
     <div>
 
       <div class="container">
 
         <div class="testimonials-box">
-
-          <!--
-            - TESTIMONIALS
-          -->
 
           <div class="testimonial">
 
@@ -5665,10 +5407,6 @@ html { font-size: 18px; }
 
 
 
-          <!--
-            - CTA
-          -->
-
           <div class="cta-container">
 
             <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
@@ -5688,10 +5426,6 @@ html { font-size: 18px; }
           </div>
 
 
-
-          <!--
-            - SERVICE
-          -->
 
           <div class="service">
 
@@ -5788,10 +5522,6 @@ html { font-size: 18px; }
 
 
 
-    <!--
-      - BLOG
-    -->
-
     <div class="blog">
 
       <div class="container">
@@ -5855,7 +5585,7 @@ html { font-size: 18px; }
               <a href="#" class="blog-category">MUTTON BIRYAN</a>
           
               <h3>
-                <a href="#" class="blog-title">SPECAL MUTTON BIRYAN.</a>
+                <a href="#" class="showcase-title">SPECAL MUTTON BIRYAN.</a>
               </h3>
           
               <p class="blog-meta">
@@ -5900,10 +5630,6 @@ html { font-size: 18px; }
 
 
 
-
-  <!--
-    - FOOTER
-  -->
 
   <footer>
 
@@ -6195,14 +5921,8 @@ html { font-size: 18px; }
 
 
 
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
